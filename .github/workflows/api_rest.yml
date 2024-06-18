@@ -1,0 +1,13 @@
+name: API
+
+on: 
+  workflow_dispatch:
+
+  jobs: 
+    testing_secrets:
+      name: testeo
+      runs_on: ubuntu-latest
+    steps: 
+      - users: action/checkout@v4
+      - name: my first secret
+      run: echo ${{API.API}}
